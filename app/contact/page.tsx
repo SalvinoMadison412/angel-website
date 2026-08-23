@@ -35,7 +35,6 @@ export default function ContactPage() {
                 <div>
                   <div className="font-mono text-[11px] uppercase tracking-widest2 text-ink-dim">Email</div>
                   <div className="mt-1 font-heading text-base text-white">hello@angelcrash.in</div>
-                  <div className="mt-1 font-heading text-base text-white">investors@angelcrash.in</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
