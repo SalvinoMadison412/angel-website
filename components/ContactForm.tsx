@@ -19,7 +19,7 @@ export default function ContactForm() {
     e.preventDefault();
     const subject = isInvestor ? `Investor Inquiry from ${name}` : `Contact Form: ${name}`;
     const body = `${message}\n\n— ${name}${company ? `, ${company}` : ""} (${email})`;
-    const mailto = `mailto:${isInvestor ? "investors" : "hello"}@angel.tech?subject=${encodeURIComponent(
+    const mailto = `mailto:${isInvestor ? "investors" : "hello"}@angelcrash.in?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
