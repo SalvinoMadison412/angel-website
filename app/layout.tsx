@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Mono, JetBrains_Mono, Inter, DM_Serif_Display } from "next/font/google";
+import { Space_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,24 +13,10 @@ const spaceMono = Space_Mono({
   display: "swap",
 });
 
-const dmSerifDisplay = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-dm-serif",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-jetbrains-mono",
-  display: "swap",
-});
-
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -58,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${spaceMono.variable} ${jetbrainsMono.variable} ${inter.variable} ${dmSerifDisplay.variable}`}
+      className={`${spaceMono.variable} ${spaceGrotesk.variable}`}
     >
       <body className="font-body bg-bg text-ink antialiased">
         <PitchDeckModalProvider>

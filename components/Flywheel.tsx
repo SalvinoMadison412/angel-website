@@ -65,7 +65,7 @@ export default function Flywheel() {
             x="150"
             y="146"
             textAnchor="middle"
-            fontFamily="var(--font-jetbrains-mono)"
+            fontFamily="var(--font-space-mono)"
             fontSize="9"
             letterSpacing="1"
             fill="#FF5722"
@@ -76,7 +76,7 @@ export default function Flywheel() {
             x="150"
             y="160"
             textAnchor="middle"
-            fontFamily="var(--font-jetbrains-mono)"
+            fontFamily="var(--font-space-mono)"
             fontSize="9"
             letterSpacing="1"
             fill="#FF5722"
@@ -91,7 +91,7 @@ export default function Flywheel() {
                 x={p.x}
                 y={p.y + 4}
                 textAnchor="middle"
-                fontFamily="var(--font-jetbrains-mono)"
+                fontFamily="var(--font-space-mono)"
                 fontSize="11"
                 fontWeight="700"
                 fill="#FFFFFF"

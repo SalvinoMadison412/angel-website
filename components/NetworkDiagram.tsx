@@ -222,7 +222,7 @@ export default function NetworkDiagram({
               x={n.x > hub.x ? n.x + 12 : n.x - 12}
               y={n.y + 3}
               textAnchor={n.x > hub.x ? "start" : "end"}
-              fontFamily="var(--font-jetbrains-mono)"
+              fontFamily="var(--font-space-mono)"
               fontSize="9"
               letterSpacing="0.5"
               fill="rgba(255,255,255,0.55)"
@@ -270,7 +270,7 @@ export default function NetworkDiagram({
             x={hub.x}
             y={hub.y + 42}
             textAnchor="middle"
-            fontFamily="var(--font-jetbrains-mono)"
+            fontFamily="var(--font-space-mono)"
             fontSize="10"
             letterSpacing="1.5"
             fill="#FF5722"
@@ -281,7 +281,7 @@ export default function NetworkDiagram({
             x={leftNodes.reduce((a, n) => a + n.x, 0) / leftNodes.length}
             y={20}
             textAnchor="middle"
-            fontFamily="var(--font-jetbrains-mono)"
+            fontFamily="var(--font-space-mono)"
             fontSize="10"
             letterSpacing="1.5"
             fill="rgba(255,255,255,0.5)"
@@ -292,7 +292,7 @@ export default function NetworkDiagram({
             x={rightNodes.reduce((a, n) => a + n.x, 0) / rightNodes.length}
             y={20}
             textAnchor="middle"
-            fontFamily="var(--font-jetbrains-mono)"
+            fontFamily="var(--font-space-mono)"
             fontSize="10"
             letterSpacing="1.5"
             fill="rgba(255,255,255,0.5)"

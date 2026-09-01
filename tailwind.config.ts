@@ -26,10 +26,10 @@ const config: Config = {
         "accent-border": "rgba(255, 87, 34, 0.5)",
       },
       fontFamily: {
-        mono: ["var(--font-jetbrains-mono)", "monospace"],
-        heading: ["var(--font-dm-serif)", "serif"],
+        mono: ["var(--font-space-mono)", "monospace"],
+        heading: ["var(--font-space-grotesk)", "sans-serif"],
         "heading-mono": ["var(--font-space-mono)", "monospace"],
-        body: ["var(--font-inter)", "sans-serif"],
+        body: ["var(--font-space-grotesk)", "sans-serif"],
       },
       letterSpacing: {
         widest2: "0.2em",
