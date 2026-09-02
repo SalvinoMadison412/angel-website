@@ -5,9 +5,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0A0A0A",
-        "bg-elevated": "#111111",
-        "bg-raised": "#161616",
+        // translucent so the 3D scene behind shows through; paired with a
+        // backdrop blur on <section> (globals.css) to keep text readable
+        bg: "rgba(10, 10, 10, 0.82)",
+        "bg-elevated": "rgba(17, 17, 17, 0.82)",
+        "bg-raised": "rgba(22, 22, 22, 0.85)",
+        "bg-solid": "#0A0A0A",
         ink: "#FFFFFF",
         "ink-muted": "#9A9A9A",
         "ink-dim": "#6B6B6B",
@@ -27,9 +30,9 @@ const config: Config = {
       },
       fontFamily: {
         mono: ["var(--font-space-mono)", "monospace"],
-        heading: ["var(--font-space-grotesk)", "sans-serif"],
+        heading: ["var(--font-space-grotesk)", "Arial Narrow", "sans-serif"],
         "heading-mono": ["var(--font-space-mono)", "monospace"],
-        body: ["var(--font-space-grotesk)", "sans-serif"],
+        body: ["var(--font-body)", "system-ui", "sans-serif"],
       },
       letterSpacing: {
         widest2: "0.2em",

@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Truck, RotateCcw, ShieldCheck } from "lucide-react";
 import Container from "../Container";
 import Button from "../Button";
-import DeviceRender from "../DeviceRender";
 
 const badges = [
   { icon: Truck, label: "Free Shipping" },
@@ -23,8 +23,15 @@ export default function ProductHero() {
           transition={{ duration: 0.6 }}
           className="relative order-2 mx-auto w-full max-w-md lg:order-1"
         >
-          <div className="bracket-corner border border-glass bg-glass-fill p-10">
-            <DeviceRender className="w-full drop-shadow-2xl" />
+          <div className="bracket-corner overflow-hidden border border-glass bg-glass-fill">
+            <Image
+              src="/product/atom.png"
+              alt="Atom crash-detection device"
+              width={1254}
+              height={1254}
+              priority
+              className="h-auto w-full"
+            />
           </div>
           <div className="mt-6 flex justify-between font-mono text-[10px] uppercase tracking-widest2 text-ink-dim">
             <span>[ 65 × 35 × 12 mm ]</span>

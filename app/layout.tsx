@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Space_Mono, Space_Grotesk } from "next/font/google";
+import { Space_Mono, Oswald, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PitchDeckModal from "@/components/PitchDeckModal";
+import Scene3D from "@/components/Scene3D";
 import { PitchDeckModalProvider } from "@/lib/PitchDeckModalContext";
 
 const spaceMono = Space_Mono({
@@ -13,10 +14,17 @@ const spaceMono = Space_Mono({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const spaceGrotesk = Oswald({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-space-grotesk",
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -44,13 +52,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${spaceMono.variable} ${spaceGrotesk.variable}`}
+      className={`${spaceMono.variable} ${spaceGrotesk.variable} ${openSans.variable}`}
     >
-      <body className="font-body bg-bg text-ink antialiased">
+      <body className="font-body text-ink antialiased">
+        <Scene3D />
         <PitchDeckModalProvider>
           <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <main className="relative z-10">{children}</main>
+          <div className="relative z-10">
+            <Footer />
+          </div>
           <PitchDeckModal />
         </PitchDeckModalProvider>
       </body>

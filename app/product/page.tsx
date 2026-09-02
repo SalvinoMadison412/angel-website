@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ProductHero from "@/components/product/ProductHero";
 import NetworkConnection from "@/components/product/NetworkConnection";
+import Features from "@/components/product/Features";
 import SpecsTable from "@/components/product/SpecsTable";
 import DevelopmentNote from "@/components/product/DevelopmentNote";
 import InTheBox from "@/components/product/InTheBox";
@@ -18,6 +19,7 @@ export default function ProductPage() {
     <>
       <ProductHero />
       <NetworkConnection />
+      <Features />
       <SpecsTable />
       <DevelopmentNote />
       <InTheBox />

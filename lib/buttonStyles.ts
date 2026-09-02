@@ -2,7 +2,7 @@ export type ButtonVariant = "primary" | "secondary" | "ghost";
 export type ButtonSize = "md" | "lg";
 
 const base =
-  "group inline-flex items-center justify-center gap-2 font-mono font-bold uppercase tracking-widest2 transition-colors duration-100 border";
+  "group inline-flex items-center justify-center gap-2 font-mono font-bold uppercase leading-none tracking-widest2 transition-colors duration-100 border";
 
 const sizes: Record<ButtonSize, string> = {
   md: "px-6 py-3 text-xs",

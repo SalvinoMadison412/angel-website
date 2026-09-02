@@ -39,18 +39,18 @@ export default function Navbar() {
         scrolled ? "bg-bg/90 backdrop-blur-md border-b border-divider" : "bg-transparent border-b border-transparent"
       }`}
     >
-      <Container className="flex h-[72px] items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5" aria-label="Angel home">
+      <Container className="flex h-[64px] items-center justify-between">
+        <Link href="/" className="flex h-full items-center gap-2.5 pr-7" aria-label="Angel home">
           <Logo className="h-7 w-7" />
           <span className="font-heading-mono text-[15px] font-bold tracking-widest2 text-white">ANGEL</span>
         </Link>
 
-        <nav className="hidden items-center gap-9 md:flex">
+        <nav className="hidden h-full items-center md:flex">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`font-mono text-xs uppercase tracking-widest2 transition-colors hover:text-accent ${
+              className={`flex h-full items-center px-5 font-mono text-[10px] uppercase tracking-widest2 transition-colors hover:text-accent lg:px-7 ${
                 pathname === link.href ? "text-accent" : "text-ink-muted"
               }`}
             >
@@ -59,7 +59,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden h-full items-center md:flex">
           <RequestPitchDeckButton size="md" />
         </div>
 
