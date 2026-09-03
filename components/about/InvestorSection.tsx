@@ -5,7 +5,7 @@ import RequestPitchDeckButton from "../RequestPitchDeckButton";
 
 export default function InvestorSection() {
   return (
-    <section id="investors" className="dot-grid relative overflow-hidden bg-bg-elevated py-28">
+    <section id="investors" className="dot-grid relative overflow-hidden bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container className="max-w-3xl text-center">
         <Reveal>
           <SectionLabel index="INVESTORS">For Investors</SectionLabel>

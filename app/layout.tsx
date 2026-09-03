@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PitchDeckModal from "@/components/PitchDeckModal";
-import Scene3D from "@/components/Scene3D";
 import { PitchDeckModalProvider } from "@/lib/PitchDeckModalContext";
 
 const spaceMono = Space_Mono({
@@ -31,7 +30,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Angel — The Network That Responds Before Help Knows It's Needed",
   description:
-    "Angel is the infrastructure layer for road safety — a two-sided network connecting drivers in distress with emergency responders, repair fleets, hospitals, and insurers in real time.",
+    "Angel is building the infrastructure layer for road safety — a two-sided network to connect drivers in distress with emergency responders, repair fleets, hospitals, and insurers. Starting with Atom, a crash-detection device that alerts your emergency contacts automatically.",
   keywords: [
     "Angel",
     "Atom",
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Angel — The Network That Responds Before Help Knows It's Needed",
     description:
-      "A real-time network connecting drivers, emergency responders, repair fleets, hospitals, and insurers — automatically.",
+      "Building the network to connect drivers, emergency responders, repair fleets, hospitals, and insurers — automatically.",
     type: "website",
   },
 };
@@ -55,7 +54,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${spaceMono.variable} ${spaceGrotesk.variable} ${openSans.variable}`}
     >
       <body className="font-body text-ink antialiased">
-        <Scene3D />
         <PitchDeckModalProvider>
           <Navbar />
           <main className="relative z-10">{children}</main>

@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Container from "../Container";
 import Button from "../Button";
-import NetworkDiagram from "../NetworkDiagram";
+import ParticleSphere from "./ParticleSphere";
 
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden border-b border-divider pt-[72px]">
       <div className="dot-grid-faint fade-mask-b pointer-events-none absolute inset-0" />
       <motion.div
-        className="pointer-events-none absolute -right-40 top-1/4 h-[560px] w-[560px] rounded-full bg-accent/20 blur-[140px]"
+        className="pointer-events-none absolute -right-40 top-1/4 h-[560px] w-[560px] rounded-full bg-accent/10 blur-[150px]"
         animate={{ scale: [1, 1.15, 1], opacity: [0.5, 0.75, 0.5] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
       <div className="pointer-events-none absolute -left-32 bottom-0 h-[420px] w-[420px] rounded-full bg-white/5 blur-[120px]" />
 
-      <Container className="relative grid grid-cols-1 items-center gap-16 py-24 lg:grid-cols-[1.05fr_0.95fr] lg:py-0">
+      <Container className="relative grid grid-cols-1 items-center gap-10 py-16 sm:gap-14 sm:py-24 lg:grid-cols-[1fr_1fr] lg:gap-8 lg:py-0">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -44,8 +44,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.16 }}
             className="mt-7 max-w-lg font-body text-base leading-relaxed text-ink-muted sm:text-lg"
           >
-            Every hour, 20 people die on Indian roads. Angel detects the crash, activates nearby motorists
-            already on the road — cabs, autos, bikes — and gets help to you before anyone knows to call.
+            Every hour, 20 people die on Indian roads. Angel is building the network that detects your crash and
+            gets help moving — starting with automatic alerts to your emergency contacts, and growing toward the
+            responders and nearby motorists who can reach you first.
           </motion.p>
 
           <motion.div
@@ -77,11 +78,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="relative mx-auto w-full max-w-lg"
+          className="relative h-[300px] w-full sm:h-[420px] lg:-my-24 lg:-mr-32 lg:h-[760px]"
         >
-          <div className="bracket-corner border border-glass bg-glass-fill p-6">
-            <NetworkDiagram variant="compact" className="w-full" />
-          </div>
+          <ParticleSphere className="absolute inset-0 h-full w-full" />
         </motion.div>
       </Container>
     </section>

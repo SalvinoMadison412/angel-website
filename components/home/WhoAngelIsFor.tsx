@@ -8,9 +8,9 @@ const columns = [
     icon: User,
     n: "01",
     title: "Everyday Riders",
-    stat: "260M+",
-    statLabel: "Registered two-wheelers in India",
-    body: "India has 260 million two-wheelers on the road. Most riders have no way to automatically alert anyone if they're in a crash and unable to call for help.",
+    stat: "19.6M",
+    statLabel: "New two-wheelers sold in India each year",
+    body: "India adds nearly 20 million new two-wheelers every year. Most riders have no way to automatically alert anyone if they're in a crash and unable to call for help.",
   },
   {
     icon: Bike,
@@ -32,7 +32,7 @@ const columns = [
 
 export default function WhoAngelIsFor() {
   return (
-    <section className="border-b border-divider bg-bg py-28">
+    <section className="border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="03">Who Angel Is For</SectionLabel>
@@ -61,7 +61,7 @@ export default function WhoAngelIsFor() {
         </div>
 
         <Reveal delay={0.3} className="mt-6 font-mono text-[11px] leading-relaxed text-ink-dim/60">
-          {"// Sources: NITI Aayog Gig Economy Report FY2024-25 · MoRTH Road Accidents in India 2024"}
+          {"// Sources: SIAM FY2025 · NITI Aayog Gig Economy Report FY2024-25 · MoRTH Road Accidents in India 2024"}
         </Reveal>
       </Container>
     </section>

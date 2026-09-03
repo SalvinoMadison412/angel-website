@@ -6,13 +6,13 @@ import Reveal from "../Reveal";
 
 const steps = [
   { icon: Package, n: "01", title: "Buy Device", body: "Order Atom and mount it in your vehicle in minutes." },
-  { icon: Smartphone, n: "02", title: "Install Angel App", body: "Pair your device and add emergency contacts." },
-  { icon: Network, n: "03", title: "Joined to Network", body: "You're now a live node — visible to every partner on the platform the moment it matters." },
+  { icon: Smartphone, n: "02", title: "Install Angel App", body: "Pair your device over Bluetooth and add your emergency contacts." },
+  { icon: Network, n: "03", title: "You're Covered", body: "Atom watches for a crash. If one happens and you can't respond, the app alerts your contacts with your location automatically." },
 ];
 
 export default function NetworkConnection() {
   return (
-    <section className="border-b border-divider bg-bg-elevated py-24">
+    <section className="border-b border-divider bg-bg-elevated py-14 sm:py-20 lg:py-24">
       <Container>
         <Reveal>
           <SectionLabel index="ENTRY POINT">Product → Network</SectionLabel>
@@ -24,8 +24,8 @@ export default function NetworkConnection() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-ink-muted">
-            You're joining the Angel network — connected, from the first mile, to every responder, tow fleet, and
-            hospital already on the platform.
+            You're backing the Angel network. Every Atom sold is one more rider on it — and the foundation for
+            the responder, tow-fleet, and hospital connections Angel is working to bring online.
           </p>
         </Reveal>
 

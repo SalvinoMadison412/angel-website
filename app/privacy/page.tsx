@@ -37,7 +37,7 @@ const permissions: [string, string][] = [
 export default function PrivacyPage() {
   return (
     <section className="border-b border-divider pt-[72px]">
-      <Container className="max-w-3xl py-24">
+      <Container className="max-w-3xl py-14 sm:py-20 lg:py-24">
         <SectionLabel index="LEGAL">Privacy Policy</SectionLabel>
         <h1 className="mt-5 font-heading text-4xl font-bold text-white">Privacy Policy</h1>
         <p className="mt-4 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim">

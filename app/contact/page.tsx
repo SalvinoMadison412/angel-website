@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="dot-grid-faint fade-mask-b border-b border-divider pt-[72px]">
-      <Container className="py-24 lg:py-32">
+      <Container className="py-16 sm:py-24 lg:py-32">
         <Reveal>
           <SectionLabel index="CONTACT">Get In Touch</SectionLabel>
         </Reveal>

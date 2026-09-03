@@ -7,12 +7,12 @@ import StatCounter from "../StatCounter";
 const stats: { value: number; suffix?: string; decimals?: number; locale?: string; label: string }[] = [
   { value: 177175, locale: "en-IN", label: "Lives Lost on Indian Roads (2024)" },
   { value: 46.2, suffix: "%", decimals: 1, label: "Two-Wheeler Fatalities" },
-  { value: 260, suffix: "M+", label: "Two-Wheelers On The Road" },
+  { value: 19.6, suffix: "M", decimals: 1, label: "New Two-Wheelers Sold In India / Year" },
 ];
 
 export default function NetworkEffect() {
   return (
-    <section className="border-b border-divider bg-bg py-28">
+    <section className="border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="FLYWHEEL">The Network Effect</SectionLabel>
@@ -48,7 +48,7 @@ export default function NetworkEffect() {
         </div>
 
         <Reveal delay={0.3} className="mt-6 font-mono text-[11px] leading-relaxed text-ink-dim/60">
-          {"// Sources: MoRTH Road Accidents in India 2024 · Data for India / MoRTH"}
+          {"// Sources: MoRTH Road Accidents in India 2024 · SIAM FY2025"}
         </Reveal>
       </Container>
     </section>

@@ -12,8 +12,11 @@ const config: Config = {
         "bg-raised": "rgba(22, 22, 22, 0.85)",
         "bg-solid": "#0A0A0A",
         ink: "#FFFFFF",
-        "ink-muted": "#9A9A9A",
-        "ink-dim": "#6B6B6B",
+        // one step below pure white — keeps value text from screaming
+        // next to its label. All four clear WCAG AA on bg/bg-elevated.
+        "ink-soft": "#EDEDED",
+        "ink-muted": "#B0B0B0",
+        "ink-dim": "#8C8C8C",
         accent: "#FF5722",
         "accent-hover": "#FF7043",
         success: "#3DDC97",

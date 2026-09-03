@@ -30,10 +30,11 @@ const tractionStats = [
     source: "MoRTH 2024",
   },
   {
-    value: 260,
+    value: 19.6,
     suffix: " Million",
-    label: "Registered two-wheelers on Indian roads today",
-    source: "Data for India / MoRTH",
+    decimals: 1,
+    label: "New two-wheelers sold in India every year",
+    source: "SIAM FY2025",
   },
 ];
 
@@ -45,7 +46,7 @@ export default function HomePage() {
         stats={tractionStats}
         sectionIndex="02"
         sectionTitle="The Problem At Scale"
-        footnote="// Sources: MoRTH Road Accidents in India 2024 · Data for India / MoRTH"
+        footnote="// Sources: MoRTH Road Accidents in India 2024 · SIAM FY2025"
       />
       <WhoAngelIsFor />
       <Platform />

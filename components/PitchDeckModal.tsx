@@ -132,7 +132,7 @@ export default function PitchDeckModal() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full border border-accent bg-accent px-6 py-3.5 font-mono text-xs font-bold uppercase tracking-widest2 text-white transition-colors duration-100 hover:border-accent-hover hover:bg-accent-hover"
+                    className="w-full border border-accent bg-accent px-6 py-3.5 font-mono text-xs font-bold uppercase tracking-widest2 text-bg-solid transition-colors duration-100 hover:border-accent-hover hover:bg-accent-hover"
                   >
                     Submit Request
                   </button>

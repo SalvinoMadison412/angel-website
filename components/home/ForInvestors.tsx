@@ -27,7 +27,7 @@ const revenue = [
 
 export default function ForInvestors() {
   return (
-    <section className="dot-grid border-b border-divider bg-bg-elevated py-28">
+    <section className="dot-grid border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="07">For Investors</SectionLabel>
@@ -39,8 +39,8 @@ export default function ForInvestors() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-ink-muted">
-            India loses 1,77,175 lives to road accidents annually. 30–40% of those deaths happen in the first
-            hour — the window where Angel operates. We are not selling safety theatre. We are building the
+            India loses 1,77,175 lives to road accidents annually. A large share of those deaths happen in the
+            first hour after a crash — the window where Angel operates. We are not selling safety theatre. We are building the
             infrastructure that plugs the response gap, starting with the millions of riders on Indian roads
             every day who have no crash detection and no guaranteed emergency response when something goes
             wrong.

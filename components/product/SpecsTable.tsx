@@ -3,19 +3,19 @@ import SectionLabel from "../SectionLabel";
 import Reveal from "../Reveal";
 
 const specs = [
-  ["Connectivity", "4G LTE / Wi-Fi / Bluetooth 5.2"],
+  ["Connectivity", "Bluetooth 5.2"],
   ["Sensors", "6-axis IMU, barometer, GPS"],
-  ["Battery", "1500mAh, USB-C charging"],
+  ["Power", "Wired to vehicle battery — no internal cell"],
   ["Detection Speed", "In active benchmarking"],
   ["Operating Temp", "-20°C to 60°C"],
   ["Dimensions", "65mm × 35mm × 12mm"],
   ["Weight", "48g"],
-  ["Certifications", "CE, FCC, RoHS"],
+  ["Included", "6 months of premium monitoring, free"],
 ];
 
 export default function SpecsTable() {
   return (
-    <section id="specs" className="border-b border-divider bg-bg-elevated py-28">
+    <section id="specs" className="border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="SPECS">Technical Datasheet</SectionLabel>
@@ -35,8 +35,8 @@ export default function SpecsTable() {
                   i % 2 === 0 ? "sm:border-r" : ""
                 } ${i < specs.length - (specs.length % 2 === 0 ? 2 : 1) ? "border-b" : ""}`}
               >
-                <span className="font-mono text-[11px] uppercase tracking-widest2 text-ink-dim">{label}</span>
-                <span className="text-right font-heading text-sm font-bold text-white sm:text-base">{value}</span>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-ink-dim">{label}</span>
+                <span className="text-right font-heading text-sm font-bold text-ink-soft sm:text-base">{value}</span>
               </div>
             ))}
           </div>

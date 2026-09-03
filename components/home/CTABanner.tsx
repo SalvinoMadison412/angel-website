@@ -4,7 +4,7 @@ import Reveal from "../Reveal";
 
 export default function CTABanner() {
   return (
-    <section className="dot-grid relative overflow-hidden bg-bg py-28">
+    <section className="dot-grid relative overflow-hidden bg-bg py-16 sm:py-20 lg:py-28">
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/15 blur-[140px]" />
       <Container className="relative text-center">
         <Reveal>

@@ -11,7 +11,7 @@ import BuyCTA from "@/components/product/BuyCTA";
 export const metadata: Metadata = {
   title: "Atom — The Hardware That Joins You to the Network | Angel",
   description:
-    "Atom is your entry point into the Angel safety network. Detects crashes in real time and connects you to every responder, tow fleet, and hospital on the platform. Pre-order now.",
+    "Atom is a crash-detection device that pairs with the Angel app and alerts your emergency contacts with your location automatically. The first piece of the Angel safety network. Pre-order now.",
 };
 
 export default function ProductPage() {

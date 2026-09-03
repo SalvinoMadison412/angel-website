@@ -34,15 +34,15 @@ const columns = [
 export default function Footer() {
   return (
     <footer className="border-t border-divider bg-bg-elevated">
-      <Container className="py-16">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          <div>
+      <Container className="py-12 sm:py-16">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-12">
+          <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
               <Logo className="h-7 w-7" />
               <span className="font-heading-mono text-[15px] font-bold tracking-widest2 text-white">ANGEL</span>
             </Link>
             <p className="mt-4 max-w-xs font-body text-sm leading-relaxed text-ink-muted">
-              The infrastructure layer for road safety — a two-sided network connecting drivers with the
+              Building the infrastructure layer for road safety — a two-sided network to connect drivers with the
               responders, fleets, and hospitals that reach them.
             </p>
             <div className="mt-6 flex items-center gap-4">
@@ -50,7 +50,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href="#"
-                  className="flex h-9 w-9 items-center justify-center border border-glass text-ink-muted transition-colors hover:border-accent hover:text-accent"
+                  className="flex h-11 w-11 items-center justify-center border border-glass text-ink-muted transition-colors hover:border-accent hover:text-accent"
                   aria-label="Social link"
                 >
                   <Icon size={16} />
@@ -65,7 +65,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <Link href={link.href} className="font-body text-sm text-ink-muted hover:text-white">
+                    <Link href={link.href} className="-my-1 inline-block py-1 font-body text-sm text-ink-muted hover:text-white">
                       {link.label}
                     </Link>
                   </li>
@@ -75,7 +75,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-divider pt-8 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-divider pt-8 text-center sm:mt-16 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim md:flex-row">
           <span>© 2026 Angel Technologies. All rights reserved.</span>
           <span>[ Designed for the roads ahead ]</span>
         </div>

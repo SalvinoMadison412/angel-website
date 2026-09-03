@@ -16,7 +16,7 @@ const rows: Row[] = [
     population: "260M+",
     useCase: "Daily commute + all two-wheeler riders",
     status: "live",
-    statusLabel: "LIVE — PHASE 1",
+    statusLabel: "PHASE 1 — IN DEVELOPMENT",
   },
   {
     market: "Vietnam",
@@ -72,7 +72,7 @@ function StatusBadge({ row }: { row: Row }) {
 
 export default function MarketExpansion() {
   return (
-    <section className="border-b border-divider bg-bg py-28">
+    <section className="border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="EXPANSION">Where We're Going</SectionLabel>
@@ -84,7 +84,7 @@ export default function MarketExpansion() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-14 overflow-x-auto border border-glass">
+          <div className="mt-10 overflow-x-auto border border-glass sm:mt-14">
             <div className="min-w-[640px]">
               <div className="grid grid-cols-[1fr_1fr_1.4fr_1.1fr] border-b border-divider bg-glass-fill">
                 {["Market", "Two-Wheeler Population", "Primary Use Case", "Status"].map((h) => (
@@ -111,6 +111,9 @@ export default function MarketExpansion() {
             </div>
           </div>
         </Reveal>
+        <p className="mt-3 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim sm:hidden">
+          Scroll the table sideways →
+        </p>
 
         <Reveal delay={0.15}>
           <p className="mt-8 max-w-2xl font-body text-sm leading-relaxed text-ink-muted">

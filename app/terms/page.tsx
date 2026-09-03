@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <section className="border-b border-divider pt-[72px]">
-      <Container className="max-w-3xl py-24">
+      <Container className="max-w-3xl py-14 sm:py-20 lg:py-24">
         <SectionLabel index="LEGAL">Terms of Service</SectionLabel>
         <h1 className="mt-5 font-heading text-4xl font-bold text-white">Terms of Service</h1>
         <p className="mt-4 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim">Last updated: January 2026</p>
@@ -21,9 +21,11 @@ export default function TermsPage() {
             driving practices, seatbelt use, or existing vehicle safety systems.
           </p>
           <p>
-            Angel makes commercially reasonable efforts to ensure timely and accurate crash detection and
-            alerting, but cannot guarantee alert delivery or response time in every circumstance, including areas
-            without cellular coverage or during extreme device damage.
+            Atom relies on a Bluetooth connection to your phone and the phone's own mobile or Wi-Fi network to
+            send alerts. Angel makes commercially reasonable efforts to provide timely and accurate crash
+            detection and alerting, but cannot guarantee alert delivery or response time in every circumstance —
+            including when your phone is off, out of Bluetooth range, or without network coverage, or during
+            extreme device damage.
           </p>
           <p>
             Devices are covered by a 2-year limited warranty against manufacturing defects and may be returned

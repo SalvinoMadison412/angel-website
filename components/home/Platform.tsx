@@ -5,10 +5,10 @@ import Reveal from "../Reveal";
 
 const driverFeatures = [
   { icon: Radar, label: "Automatic crash detection via Atom" },
-  { icon: MapPin, label: "Live location sharing with emergency contacts" },
-  { icon: Bell, label: "One-tap SOS to all connected partner services" },
-  { icon: Clock3, label: "Real-time ETA from dispatched responders" },
-  { icon: BarChart3, label: "Trip history and safety analytics" },
+  { icon: MapPin, label: "Live location sent to your emergency contacts" },
+  { icon: Bell, label: "Automatic WhatsApp message and call to your contacts" },
+  { icon: Clock3, label: "Countdown to cancel a false alarm" },
+  { icon: BarChart3, label: "Incident history you can review" },
 ];
 
 const partnerTypes = [
@@ -21,7 +21,7 @@ const partnerTypes = [
 
 export default function Platform() {
   return (
-    <section id="platform" className="scroll-mt-[72px] border-b border-divider bg-bg-elevated py-28">
+    <section id="platform" className="scroll-mt-[72px] border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="04">Two Apps. One Network.</SectionLabel>
@@ -38,8 +38,8 @@ export default function Platform() {
               <span className="font-mono text-[11px] uppercase tracking-widest2 text-ink-dim">[ Consumer ]</span>
               <h3 className="mt-3 font-heading text-2xl font-bold text-white">For Drivers</h3>
               <p className="mt-4 font-body text-sm leading-relaxed text-ink-muted sm:text-base">
-                The consumer app that turns any phone into a 24/7 safety companion. Detects crashes, triggers
-                SOS, shares live GPS, and connects to the nearest available partner — automatically.
+                The consumer app that pairs with Atom and watches for a crash. When one is detected, it triggers
+                the countdown, then alerts your emergency contacts with your live location — automatically.
               </p>
               <ul className="mt-8 space-y-4">
                 {driverFeatures.map((f) => (
@@ -57,9 +57,9 @@ export default function Platform() {
               <span className="font-mono text-[11px] uppercase tracking-widest2 text-ink-dim">[ Partners ]</span>
               <h3 className="mt-3 font-heading text-2xl font-bold text-white">For Responders</h3>
               <p className="mt-4 font-body text-sm leading-relaxed text-ink-muted sm:text-base">
-                The network behind the app — emergency responders, tow services, hospitals, and insurers who
-                make the response possible. They receive verified incident alerts with GPS, rider data, and
-                severity classification — before a single call is made.
+                The network Angel is building behind the app — emergency responders, tow services, hospitals, and
+                insurers. As partners come online, they'll receive verified incident alerts with GPS, rider data,
+                and severity classification — before a single call is made.
               </p>
               <ul className="mt-8 space-y-4">
                 {partnerTypes.map((f) => (
@@ -79,8 +79,8 @@ export default function Platform() {
               [ Angel Infrastructure — AI · Real-time Data · Network Matching ]
             </span>
             <p className="max-w-xl font-body text-sm text-ink-muted">
-              Every driver and every partner connect through the same real-time layer — the part of Angel that
-              makes the network valuable.
+              The plan: every driver and every partner connecting through the same real-time layer — the part of
+              Angel that makes the network valuable.
             </p>
           </div>
         </Reveal>

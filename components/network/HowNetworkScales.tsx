@@ -26,7 +26,7 @@ const columns = [
 
 export default function HowNetworkScales() {
   return (
-    <section className="border-b border-divider bg-bg py-28">
+    <section className="border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="SCALE">How The Network Scales</SectionLabel>

@@ -16,7 +16,7 @@ export default function ProductHero() {
   return (
     <section className="relative overflow-hidden border-b border-divider pt-[72px]">
       <div className="dot-grid-faint fade-mask-b pointer-events-none absolute inset-0" />
-      <Container className="relative grid grid-cols-1 items-center gap-16 py-20 lg:grid-cols-[0.95fr_1.05fr] lg:py-28">
+      <Container className="relative grid grid-cols-1 items-center gap-10 py-14 sm:gap-16 sm:py-20 lg:grid-cols-[0.95fr_1.05fr] lg:py-28">
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -33,7 +33,7 @@ export default function ProductHero() {
               className="h-auto w-full"
             />
           </div>
-          <div className="mt-6 flex justify-between font-mono text-[10px] uppercase tracking-widest2 text-ink-dim">
+          <div className="mt-6 flex justify-between font-mono text-[11px] uppercase tracking-widest2 text-ink-dim">
             <span>[ 65 × 35 × 12 mm ]</span>
             <span>[ 48g ]</span>
           </div>
@@ -73,8 +73,9 @@ export default function ProductHero() {
             transition={{ duration: 0.5, delay: 0.18 }}
             className="mt-5 max-w-md font-body text-sm leading-relaxed text-ink-muted sm:text-base"
           >
-            Atom is not just a crash detector — it's your entry point into the Angel safety network. One
-            purchase connects you to every responder, tow fleet, and hospital already on the platform.
+            Atom is a crash detector that pairs with the Angel app on your phone. When it senses an impact,
+            the app alerts your emergency contacts with your location — and it's the first piece of the wider
+            responder network Angel is building.
           </motion.p>
 
           <motion.div

@@ -23,7 +23,7 @@ const points = [
 
 export default function TwoAppStrategy() {
   return (
-    <section className="border-b border-divider bg-bg py-28">
+    <section className="border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="STRATEGY">The Two-App Strategy</SectionLabel>

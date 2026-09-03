@@ -9,7 +9,7 @@ import PartnerIntegration from "@/components/network/PartnerIntegration";
 export const metadata: Metadata = {
   title: "The Network — Angel Platform Architecture",
   description:
-    "Angel operates a real-time matching network connecting every rider on the road to help the moment they need it, built on a cloud-native, AI-first stack.",
+    "Angel is building a real-time matching network to connect every rider on the road to help the moment they need it, on a cloud-native, AI-first stack.",
 };
 
 export default function NetworkPage() {

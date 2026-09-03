@@ -5,34 +5,34 @@ import Accordion from "../Accordion";
 
 const faqs = [
   {
-    q: "How does Atom know the difference between a real crash and a pothole?",
-    a: "Atom fuses accelerometer and gyroscope data through an onboard AI model trained on real-world collision datasets. It looks at impact force, deceleration rate, and orientation change together, not any single spike — so routine bumps don't trigger a false alarm.",
+    q: "How does Atom tell a real crash apart from a rough road?",
+    a: "Atom combines accelerometer, gyroscope, barometer and GPS readings and looks at impact force, deceleration and orientation change together, rather than reacting to a single spike. We're still benchmarking detection accuracy and speed, and we'll publish those numbers once they hold up — we're not going to claim a figure we can't back.",
   },
   {
     q: "Does Atom need my phone to work?",
-    a: "No. Atom has its own 4G LTE connection and GPS, so it can detect a crash and send an alert independently of your phone's battery, signal, or proximity. Pairing it with the companion app adds real-time monitoring, but isn't required for core alerts.",
+    a: "Yes. Atom connects to your phone over Bluetooth, and the companion app relays crash alerts to your emergency contacts and the Angel network. If your phone is off or out of Bluetooth range at the moment of a crash, the alert can't be sent — this is a Bluetooth device, not a standalone cellular one.",
   },
   {
     q: "Is there a monthly subscription fee?",
-    a: "Core crash detection and automatic SOS alerting works out of the box with no subscription. Optional premium monitoring features are available through the companion app for users who want extended history and multi-device fleet views.",
+    a: "No. Crash detection and automatic alerting work with no subscription. Every Atom also includes 6 months of premium monitoring free; after that, premium (extended history and additional monitoring features) is optional and the core safety features keep working without it.",
   },
   {
-    q: "How long does the battery last?",
-    a: "Atom lasts up to 72 hours on standby from a single charge. It draws power over USB-C and is designed to sit mounted and topped up while your vehicle is running, so most owners never think about charging it separately.",
+    q: "Do I need to charge Atom?",
+    a: "No. Atom has no internal battery. It wires into your motorcycle or moped's battery and draws a small amount of power to stay on — there's nothing to plug in or recharge.",
   },
   {
     q: "Can I cancel a false alarm?",
-    a: "Yes. When Atom detects a possible crash, it starts a short countdown window before dispatching an alert, giving you time to confirm you're okay and cancel directly from the device or the companion app.",
+    a: "Yes. When Atom detects a possible crash it starts a short countdown before sending an alert, so you have time to confirm you're okay and cancel it from the companion app.",
   },
   {
     q: "What's the warranty and return policy?",
-    a: "Every Atom ships with a 2-year manufacturer warranty covering hardware defects, plus a 30-day no-questions return window if it's not the right fit for you.",
+    a: "Every Atom ships with a 2-year warranty covering hardware defects, plus a 30-day return window if it's not the right fit.",
   },
 ];
 
 export default function ProductFAQ() {
   return (
-    <section id="faq" className="border-b border-divider bg-bg-elevated py-28">
+    <section id="faq" className="border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container className="max-w-3xl">
         <Reveal>
           <SectionLabel index="FAQ">Common Questions</SectionLabel>

@@ -8,44 +8,44 @@ const steps = [
     n: "01",
     icon: Radar,
     title: "Impact Detected",
-    body: "Atom's 6-axis IMU registers the crash the moment it happens. AI on-device classifies severity in real time.",
+    body: "Atom's 6-axis IMU registers the impact and sends the reading to the paired Angel app over Bluetooth.",
   },
   {
     n: "02",
-    icon: Send,
-    title: "Data Transmitted",
-    body: "Crash data, GPS coordinates, speed at impact, and severity score are sent to Angel's cloud infrastructure in real time.",
+    icon: ShieldCheck,
+    title: "You Get A Countdown",
+    body: "The app classifies the event and starts a short countdown, so you can cancel if it was a false alarm.",
   },
   {
     n: "03",
-    icon: Network,
-    title: "Network Activated",
-    body: "Angel's matching engine identifies and notifies the nearest available partners — EMS, tow services, and hospitals — simultaneously.",
+    icon: Send,
+    title: "Contacts Alerted",
+    body: "If you don't cancel, the app messages and calls your emergency contacts with your live location and a maps link.",
   },
   {
     n: "04",
-    icon: Users,
-    title: "Partners Respond",
-    body: "Partners receive a verified incident card on the Angel Partners app with full incident details, GPS pin, and victim information.",
+    icon: Network,
+    title: "Network Activated",
+    body: "On the roadmap: the same alert reaches nearby responders, tow services, and hospitals as Angel brings partners online.",
   },
   {
     n: "05",
-    icon: ShieldCheck,
-    title: "Help Arrives",
-    body: "Responders are en route before the driver's emergency contacts even finish receiving their SOS notification.",
+    icon: Users,
+    title: "Help Coordinated",
+    body: "The goal — a verified incident routed to the closest available help before anyone has to make a call.",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative border-b border-divider bg-bg-elevated py-28">
+    <section id="how-it-works" className="relative border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="05">What Happens In A Crash</SectionLabel>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="mt-5 max-w-2xl font-heading text-3xl font-bold leading-tight text-white sm:text-4xl">
-            Five seconds that save a life.
+            The seconds after a crash, handled automatically.
           </h2>
         </Reveal>
 

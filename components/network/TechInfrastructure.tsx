@@ -4,16 +4,16 @@ import Reveal from "../Reveal";
 
 const specs = [
   ["Real-time event processing", "Benchmarking in progress"],
-  ["AI crash severity model", "Trained on 2M+ incident records"],
+  ["AI crash severity model", "In development and validation"],
   ["Uptime SLA", "To be published"],
-  ["Data sovereignty", "GDPR compliant, regional data residency"],
+  ["Data sovereignty", "Regional data residency"],
   ["API availability", "Partner API — latency benchmarks in progress"],
-  ["Coverage", "4G LTE / 5G / Wi-Fi fallback"],
+  ["Connectivity", "Rider app over phone mobile data / Wi-Fi"],
 ];
 
 export default function TechInfrastructure() {
   return (
-    <section className="border-b border-divider bg-bg-elevated py-28">
+    <section className="border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="STACK">Technical Infrastructure</SectionLabel>

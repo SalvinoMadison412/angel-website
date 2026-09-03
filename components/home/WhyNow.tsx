@@ -7,7 +7,7 @@ function Stat({ value, label, source }: { value: string; label: string; source: 
     <div className="border-t border-divider py-4 first:border-t-0 first:pt-0">
       <div className="font-mono text-xl font-bold text-white sm:text-2xl">{value}</div>
       <div className="mt-1 font-body text-xs leading-relaxed text-ink-muted">{label}</div>
-      <div className="mt-1.5 font-mono text-[10px] uppercase tracking-widest2 text-ink-dim/60">
+      <div className="mt-1.5 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim/60">
         Source: {source}
       </div>
     </div>
@@ -15,7 +15,7 @@ function Stat({ value, label, source }: { value: string; label: string; source: 
 }
 
 const apacMarkets = [
-  { flag: "🇮🇳", name: "India", stat: "260M+ two-wheelers — world's largest fleet by volume" },
+  { flag: "🇮🇳", name: "India", stat: "~19.6M new two-wheelers sold a year — world's largest market by volume" },
   { flag: "🇻🇳", name: "Vietnam", stat: "77M+ motorcycles — 770 per 1,000 people, highest density globally" },
   { flag: "🇮🇩", name: "Indonesia", stat: "World's 2nd largest two-wheeler market by volume" },
   { flag: "🇹🇼", name: "Taiwan", stat: "Among world's highest motorcycle-per-capita ratios" },
@@ -25,7 +25,7 @@ const apacMarkets = [
 
 export default function WhyNow() {
   return (
-    <section className="border-b border-divider bg-bg py-28">
+    <section className="border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="06">The Market</SectionLabel>
@@ -44,7 +44,7 @@ export default function WhyNow() {
               <h3 className="mt-3 font-heading text-lg font-bold text-white">India</h3>
 
               <div className="mt-2">
-                <Stat value="260M+" label="Registered two-wheelers in India" source="Data for India / MoRTH" />
+                <Stat value="19.6M" label="New two-wheelers sold in India each year" source="SIAM FY2025" />
                 <Stat
                   value="12M → 23.5M"
                   label="Gig workers on Indian roads today, growing by 2030"
@@ -58,9 +58,9 @@ export default function WhyNow() {
               </div>
 
               <p className="mt-5 font-body text-sm leading-relaxed text-ink-muted">
-                Angel's immediate market is India's 260 million registered two-wheeler riders — commuters,
-                delivery riders, and anyone on the road with no crash detection and no guaranteed emergency
-                response when something goes wrong.
+                Angel's immediate market is the ~20 million new two-wheelers sold in India each year — ridden by
+                commuters, delivery riders, and anyone on the road with no crash detection and no guaranteed
+                emergency response when something goes wrong.
               </p>
             </div>
           </Reveal>
@@ -90,7 +90,7 @@ export default function WhyNow() {
                 of them.
               </p>
 
-              <p className="mt-4 font-mono text-[10px] uppercase tracking-widest2 text-ink-dim/60">
+              <p className="mt-4 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim/60">
                 Source: autopunditz.com (May 2026) · Vietnam National Traffic Safety Committee · ICCT Global
                 Two-Wheeler Report 2025
               </p>
@@ -129,7 +129,7 @@ export default function WhyNow() {
           delay={0.2}
           className="mt-6 font-mono text-[11px] leading-relaxed text-ink-dim/60"
         >
-          {"// Sources: MoRTH Road Accidents in India 2024 · NITI Aayog Gig Economy Report FY2024-25 · MarqStats India Telematics Market 2025 · autopunditz.com (May 2026) · Vietnam National Traffic Safety Committee · ICCT Global Two-Wheeler Report 2025 · Global Market Insights APAC Two-Wheeler Report 2024 · GMInsights Automotive Telematics Market 2025"}
+          {"// Sources: SIAM FY2025 · MoRTH Road Accidents in India 2024 · NITI Aayog Gig Economy Report FY2024-25 · MarqStats India Telematics Market 2025 · autopunditz.com (May 2026) · Vietnam National Traffic Safety Committee · ICCT Global Two-Wheeler Report 2025 · Global Market Insights APAC Two-Wheeler Report 2024 · GMInsights Automotive Telematics Market 2025"}
         </Reveal>
       </Container>
     </section>

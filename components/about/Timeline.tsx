@@ -3,15 +3,15 @@ import SectionLabel from "../SectionLabel";
 import Reveal from "../Reveal";
 
 const milestones = [
-  { year: "2023", title: "Founded", body: "Angel is founded after a near-miss highlights the gap between vehicle safety and post-crash response." },
-  { year: "2024", title: "First Prototype", body: "Atom's sensor-fusion detection engine passes internal validation against a 2,000-collision dataset." },
-  { year: "2025", title: "Field Pilot", body: "500 devices deployed across pilot fleets in three countries, refining the AI severity model on real-world data." },
-  { year: "2026", title: "Public Launch", body: "Atom ships to consumers and fleet operators globally, backed by CE, FCC, and RoHS certification." },
+  { year: "2023", title: "Founded", body: "Angel starts after a near-miss highlights the gap between vehicle safety and post-crash response." },
+  { year: "2024", title: "First Prototype", body: "Atom's sensor-fusion detection engine moves from concept to a working prototype." },
+  { year: "2025", title: "Detection Tuning", body: "Crash-detection logic refined against real-world riding data ahead of launch." },
+  { year: "2026", title: "Pre-order & Pilot", body: "Atom opens for pre-order. Manufacturing and certification are in progress." },
 ];
 
 export default function Timeline() {
   return (
-    <section className="border-b border-divider bg-bg py-28">
+    <section className="border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="TIMELINE">Milestones</SectionLabel>

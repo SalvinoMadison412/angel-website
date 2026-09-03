@@ -14,7 +14,7 @@ const categories = [
 
 export default function PartnerEcosystem() {
   return (
-    <section id="partners" className="scroll-mt-[72px] border-b border-divider bg-bg-elevated py-28">
+    <section id="partners" className="scroll-mt-[72px] border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="PARTNERS">Partner Ecosystem</SectionLabel>
@@ -26,9 +26,9 @@ export default function PartnerEcosystem() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-ink-muted">
-            Angel doesn't replace emergency services — it makes them faster. Partners on the Angel network
-            receive real-time, AI-verified incident data that eliminates the most expensive bottleneck in
-            emergency response: the delay between crash and first notification.
+            Angel doesn't replace emergency services — it's designed to make them faster. The plan: partners on
+            the Angel network receive verified incident data that closes the most expensive gap in emergency
+            response — the delay between crash and first notification.
           </p>
         </Reveal>
 

@@ -5,7 +5,7 @@ import Reveal from "../Reveal";
 export default function MissionHero() {
   return (
     <section className="dot-grid-faint fade-mask-b relative border-b border-divider pt-[72px]">
-      <Container className="py-24 lg:py-32">
+      <Container className="py-16 sm:py-24 lg:py-32">
         <Reveal>
           <SectionLabel index="ABOUT">Our Mission</SectionLabel>
         </Reveal>
@@ -23,9 +23,8 @@ export default function MissionHero() {
               transformed completely.
             </p>
             <p>
-              We're a team of hardware engineers, safety researchers, and former emergency dispatch operators
-              building the network that should have existed all along — one where drivers, responders, tow
-              fleets, hospitals, and insurers are already connected before a crash ever happens.
+              We're a founding team building the network that should have existed all along — one where drivers,
+              responders, tow fleets, hospitals, and insurers are connected before a crash ever happens.
             </p>
           </div>
         </Reveal>

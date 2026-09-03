@@ -25,7 +25,7 @@ export default function StatsBand({
   footnote?: string;
 }) {
   return (
-    <section className="dot-grid border-b border-divider bg-bg-elevated py-20">
+    <section className="dot-grid border-b border-divider bg-bg-elevated py-14 sm:py-20">
       <Container>
         {sectionIndex && sectionTitle && (
           <Reveal className="mb-10">
@@ -33,7 +33,7 @@ export default function StatsBand({
           </Reveal>
         )}
 
-        <div className="grid grid-cols-2 gap-10 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
           {stats.map((s, i) => (
             <Reveal
               key={s.label}
@@ -53,7 +53,7 @@ export default function StatsBand({
                 {s.label}
               </div>
               {s.source && (
-                <div className="mt-1.5 font-mono text-[9px] uppercase tracking-widest2 text-ink-dim/60">
+                <div className="mt-1.5 font-mono text-[11px] uppercase tracking-widest2 text-ink-dim/60">
                   Source: {s.source}
                 </div>
               )}

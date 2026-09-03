@@ -9,7 +9,7 @@ const team = [
     role: "Co-Founder",
     initials: "SKM",
     photoSrc: "/assets/salvino.jpg",
-    bio: "Salvino founded Angel after watching how little safety infrastructure exists for the millions of people who ride. He spent two years as a Data Analyst at SNP Global, building the habit of making decisions from data, not instinct, while simultaneously running The Library Company's full marketing operation — proving he could turn strategy into execution. At Angel, he brings both disciplines together: the rigor to understand markets and the creativity to move them, driving the partnerships that turn the network's vision into a working system.",
+    bio: "Salvino founded Angel after watching how little safety infrastructure exists for the millions of people who ride. He spent two years as a Data Analyst at S&P Global, building the habit of making decisions from data, not instinct, while simultaneously running The Library Company's full marketing operation — proving he could turn strategy into execution. At Angel, he brings both disciplines together: the rigor to understand markets and the creativity to move them, driving the partnerships that turn the network's vision into a working system.",
   },
   {
     name: "Sherwin Judas Madison",
@@ -21,7 +21,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section className="border-b border-divider bg-bg-elevated py-28">
+    <section className="border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="TEAM">Founders</SectionLabel>

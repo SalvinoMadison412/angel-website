@@ -42,7 +42,7 @@ export default function ContactForm() {
             aria-selected={tab === value}
             onClick={() => setTab(value)}
             className={`flex-1 border-r border-glass px-4 py-3.5 font-mono text-xs uppercase tracking-widest2 transition-colors duration-100 last:border-r-0 ${
-              tab === value ? "bg-accent text-white" : "bg-transparent text-ink-muted hover:text-white"
+              tab === value ? "bg-accent text-bg-solid" : "bg-transparent text-ink-muted hover:text-white"
             }`}
           >
             {label}
@@ -122,7 +122,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="group inline-flex w-full items-center justify-center gap-2 border border-accent bg-accent px-8 py-4 font-mono text-xs font-bold uppercase tracking-widest2 text-white transition-colors duration-100 hover:border-accent-hover hover:bg-accent-hover sm:w-auto"
+          className="group inline-flex w-full items-center justify-center gap-2 border border-accent bg-accent px-8 py-4 font-mono text-xs font-bold uppercase tracking-widest2 text-bg-solid transition-colors duration-100 hover:border-accent-hover hover:bg-accent-hover sm:w-auto"
         >
           {sent ? (
             <>

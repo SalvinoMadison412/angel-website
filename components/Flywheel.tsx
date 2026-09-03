@@ -7,22 +7,22 @@ const stages = [
   {
     n: "01",
     title: "More Drivers Join",
-    body: "Every Atom sold and every app install brings a new driver onto the Angel network.",
+    body: "Each Atom sold and app install adds another driver to the network.",
   },
   {
     n: "02",
     title: "More Verified Incidents",
-    body: "Real crashes generate real, GPS-verified, severity-scored incident data in real time.",
+    body: "As drivers join, real crashes produce GPS-verified, severity-scored incident data.",
   },
   {
     n: "03",
     title: "More Partners Connect",
-    body: "EMS, tow fleets, hospitals, and insurers join to access verified demand and faster dispatch.",
+    body: "That verified demand is what brings EMS, tow fleets, hospitals, and insurers onto the network.",
   },
   {
     n: "04",
     title: "Faster Response Wins",
-    body: "Denser partner coverage cuts response time further, attracting the next wave of drivers.",
+    body: "Denser partner coverage cuts response time further, drawing the next wave of drivers.",
   },
 ];
 

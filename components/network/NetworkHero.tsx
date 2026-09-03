@@ -7,7 +7,7 @@ import SectionLabel from "../SectionLabel";
 export default function NetworkHero() {
   return (
     <section className="dot-grid-faint fade-mask-b relative border-b border-divider pt-[72px]">
-      <Container className="py-24 lg:py-32">
+      <Container className="py-16 sm:py-24 lg:py-32">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <SectionLabel index="NETWORK">Platform Architecture</SectionLabel>
         </motion.div>
@@ -25,8 +25,8 @@ export default function NetworkHero() {
           transition={{ duration: 0.5, delay: 0.14 }}
           className="mt-8 max-w-2xl font-body text-base leading-relaxed text-ink-muted sm:text-lg"
         >
-          Angel operates a real-time matching network connecting every rider on the road to help the moment
-          they need it — built on a cloud-native, AI-first stack.
+          Angel is building a real-time matching network to connect every rider on the road to help the moment
+          they need it — on a cloud-native, AI-first stack.
         </motion.p>
       </Container>
     </section>

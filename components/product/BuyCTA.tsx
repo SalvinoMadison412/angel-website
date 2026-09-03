@@ -4,7 +4,7 @@ import Reveal from "../Reveal";
 
 export default function BuyCTA() {
   return (
-    <section id="buy" className="dot-grid relative overflow-hidden bg-bg py-24">
+    <section id="buy" className="dot-grid relative overflow-hidden bg-bg py-14 sm:py-20 lg:py-24">
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[460px] w-[460px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/15 blur-[140px]" />
       <Container className="relative flex flex-col items-center gap-8 text-center">
         <Reveal>

@@ -13,14 +13,14 @@ const steps = [
 
 export default function PartnerIntegration() {
   return (
-    <section id="partners" className="scroll-mt-[72px] border-b border-divider bg-bg py-28">
+    <section id="partners" className="scroll-mt-[72px] border-b border-divider bg-bg py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
           <SectionLabel index="ONBOARD">Partner Integration</SectionLabel>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="mt-5 max-w-2xl font-heading text-3xl font-bold leading-tight text-white sm:text-4xl">
-            Joining the Angel network takes under 24 hours.
+            A straightforward path to joining the Angel network.
           </h2>
         </Reveal>
 

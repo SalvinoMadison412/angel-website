@@ -11,7 +11,9 @@ const sizes: Record<ButtonSize, string> = {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-accent border-accent text-white hover:bg-accent-hover hover:border-accent-hover animate-glow-pulse",
+    // near-black label, not white: white on #FF5722 is only 3.16:1 and fails
+    // WCAG AA. Dark-on-orange keeps the brand colour exact and reads at 6.5:1.
+    "bg-accent border-accent text-bg-solid hover:bg-accent-hover hover:border-accent-hover animate-glow-pulse",
   secondary: "bg-transparent border-glass text-white hover:border-accent hover:text-accent",
   ghost: "bg-transparent border-transparent text-white hover:text-accent",
 };
