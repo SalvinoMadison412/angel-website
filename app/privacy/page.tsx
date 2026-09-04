@@ -46,9 +46,9 @@ export default function PrivacyPage() {
 
         <div className="mt-12 space-y-8 font-body text-sm leading-relaxed text-ink-muted sm:text-base">
           <p>
-            Angel ("Angel", "we", "us") provides a two-wheeler crash-detection app that pairs with Atom, a
-            compact device mounted on your bike, detects possible crashes, and alerts your emergency contacts.
-            This policy explains what data Angel collects, why, and how it's handled.
+            Angel ("Angel", "we", "us") provides a two-wheeler crash-detection app that pairs with a wearable
+            sensor, detects possible crashes, and alerts your emergency contacts. This policy explains what data
+            Angel collects, why, and how it's handled.
           </p>
 
           <div>
