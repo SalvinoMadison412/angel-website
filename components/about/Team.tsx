@@ -5,17 +5,11 @@ import FounderAvatar from "./FounderAvatar";
 
 const team = [
   {
-    name: "Salvino Kevin Madison",
-    role: "Co-Founder",
-    initials: "SKM",
+    name: "Salvino Madison",
+    role: "Founder",
+    initials: "SM",
     photoSrc: "/assets/salvino.jpg",
     bio: "Salvino founded Angel after watching how little safety infrastructure exists for the millions of people who ride. He spent two years as a Data Analyst at S&P Global, building the habit of making decisions from data, not instinct, while simultaneously running The Library Company's full marketing operation — proving he could turn strategy into execution. At Angel, he brings both disciplines together: the rigor to understand markets and the creativity to move them, driving the partnerships that turn the network's vision into a working system.",
-  },
-  {
-    name: "Sherwin Judas Madison",
-    role: "Co-Founder & CFO",
-    initials: "SJM",
-    bio: "Sherwin Judas Madison is the Co-Founder and CFO of Angel. A Chartered Accountancy candidate, he has spent the past one and a half years at SRVN & Associates, working closely with businesses on accounting, taxation, advisory, and corporate legal matters. That experience has sharpened his ability to solve complex business problems with both financial discipline and strategic thinking. At Angel, he brings a strong foundation in finance and compliance — turning regulatory complexity into a competitive advantage and helping the business scale with structure.",
   },
 ];
 
@@ -24,15 +18,15 @@ export default function Team() {
     <section className="border-b border-divider bg-bg-elevated py-16 sm:py-20 lg:py-28">
       <Container>
         <Reveal>
-          <SectionLabel index="TEAM">Founders</SectionLabel>
+          <SectionLabel index="TEAM">Founder</SectionLabel>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="mt-5 max-w-2xl font-heading text-3xl font-bold leading-tight text-white sm:text-4xl">
-            Built by operators who refused to look away from the gap.
+            Built by an operator who refused to look away from the gap.
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-16 grid max-w-2xl grid-cols-1 gap-6">
           {team.map((member, i) => (
             <Reveal key={member.name} delay={i * 0.08}>
               <div className="group relative h-full overflow-hidden rounded-sm border border-glass bg-gradient-to-b from-glass-fill-raised to-transparent p-9 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-accent-border hover:shadow-[0_16px_40px_rgba(0,0,0,0.45)]">

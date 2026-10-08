@@ -17,7 +17,7 @@ export default function MissionHero() {
         <Reveal delay={0.1}>
           <div className="mt-10 grid max-w-3xl grid-cols-1 gap-6 font-body text-base leading-relaxed text-ink-muted sm:text-lg md:grid-cols-2">
             <p>
-              Angel started with a question our founders couldn't stop asking after a close friend was seriously
+              Angel started with a question our founder couldn't stop asking after a close friend was seriously
               injured in a highway collision: why does help still depend on someone conscious enough to call for
               it? Emergency response has barely changed in fifty years, while the vehicles it protects have
               transformed completely.
